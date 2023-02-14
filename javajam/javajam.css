@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Montaga&family=Montserrat:wght@700&display=swap');
+
+body {
+    font-family: Tahoma,Arial,sans-serif;
+    background-color: #FCEBB6;
+    color:#221811;
+}
+
+header {
+    text-align: center;
+    color: #FCEBB6;
+    background-color: #D2B48C;
+}
+
+h1 {
+    line-height: 200%;
+}
+
+h2 {
+    color: #8C3826;
+}
+
+nav {
+    text-align: center;
+    font-weight: bold;
+}
+
+dt {
+    font-family: Montserrat;
+}
+
+footer {
+    font-family: Montaga, Arial, Helvetica, sans-serif;
+    background-color: #D2B48C;
+    font-size: .60em;
+    text-align: center;
+}
+
+#wrapper {
+    background-color: #FEFAEB;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
