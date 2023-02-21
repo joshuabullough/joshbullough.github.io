@@ -1,32 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Montaga&family=Montserrat:wght@700&display=swap');
 
 body {
-    font-family: Tahoma,Arial,sans-serif;
+    font-family: Tahoma, Arial, sans-serif;
     background-color: #FCEBB6;
-    color:#221811;
+    background-image: url("images/fadedroad50.jpg");
+    background-repeat: no-repeat;
+    color: #221811;
 }
 
 header {
     text-align: center;
     color: #FCEBB6;
     background-color: #D2B48C;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 h1 {
     line-height: 200%;
+    line-height: 3em;
 }
 
 h2 {
     color: #8C3826;
 }
 
+h3 {
+    color: #8C3826;
+}
+
+h4 {
+    background-color: #D2B48C;
+    font-size: 1.2em;
+    padding-left: .5em;
+    padding-bottom: .25em;
+}
+
 nav {
     text-align: center;
     font-weight: bold;
+    font-size: 1em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+main {
+    display: block;
+    padding:0em 2em 2em 2em;
 }
 
 dt {
     font-family: Montserrat;
+    color: #8C3826;
+}
+
+img {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 footer {
@@ -34,11 +68,27 @@ footer {
     background-color: #D2B48C;
     font-size: .60em;
     text-align: center;
+    padding: 1em;
+    border: 2px solid #8C3826;
+}
+
+.details {
+    padding-left:20%;
+    padding-right:20%;
 }
 
 #wrapper {
     background-color: #FEFAEB;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    min-width: 900px;
+    max-width: 1280px;
+    box-shadow: 5px 2px 5px 1px grey;
+}
+
+#homehero {
+    height: 300px;
+    background-image: url("images/hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
