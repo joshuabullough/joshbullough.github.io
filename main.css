@@ -29,6 +29,10 @@ nav, footer {
 	background-color: #c2d5db;
 }
 
+.Logobox{
+	display: inline-flex;
+}
+
 #pageHeader {
 	grid-area: header;
 	position: sticky;
