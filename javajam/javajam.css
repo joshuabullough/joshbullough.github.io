@@ -1,24 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Montaga&family=Montserrat:wght@700&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Tahoma, Arial, sans-serif;
     background-color: #FCEBB6;
     background-image: url("images/fadedroad50.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     color: #221811;
 }
 
+#wrapper {
+    background-color: #231814;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    min-width: 900px;
+    max-width: 1280px;
+    box-shadow: 3px 3px 3px #676767;
+    padding: 0;
+}
+
 header {
-    text-align: center;
-    color: #FCEBB6;
     background-color: #D2B48C;
+    background-image: url("images/coffeelogo.jpg");
+    background-repeat: no-repeat;
+    color: #231814;
+    padding-left: 240px;
     padding-top: 5px;
     padding-bottom: 5px;
 }
 
+header a {
+    text-decoration: none;
+}
+
+header a:link {
+    color: #231814;
+}
+
+header a:visited {
+    color: #231814;
+}
+
+header a:hover {
+    color: #FEF6C2;
+}
+
 h1 {
-    line-height: 200%;
-    line-height: 3em;
+	font-size: 3em; 
+	font-family: 'Bayon', sans-serif;
 }
 
 h2 {
@@ -33,24 +68,60 @@ h4 {
     background-color: #D2B48C;
     font-size: 1.2em;
     padding-left: .5em;
-    padding-bottom: .25em;
+    padding-bottom: 0;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+    clear: left;
 }
 
 nav {
+    float: left;
     text-align: center;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1.5em;
     padding-top: 5px;
     padding-bottom: 5px;
+    width: 200px;
 }
 
 nav a {
     text-decoration: none;
 }
 
+nav a:link {
+    color: #FEF6C2;
+}
+
+nav a:visited {
+    color: #D2B48C;
+}
+
+nav a:hover {
+    color: #CC9933;
+}
+
+nav ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
 main {
     display: block;
-    padding: 0em 2em 2em 2em;
+    padding: 0 0 2em 0;
+    margin-left: 200px;
+    background-color: #FEF6C2;
+    overflow: auto;
+}
+
+main h2,
+h3,
+h4,
+p,
+div,
+ul,
+dl {
+    padding-left: 3em;
+    padding-right: 3em;
 }
 
 dt {
@@ -69,6 +140,7 @@ footer {
     background-color: #D2B48C;
     font-size: .60em;
     text-align: center;
+    font-style: italic;
     padding: 1em;
     border: 2px solid #8C3826;
 }
@@ -76,21 +148,37 @@ footer {
 .details {
     padding-left: 20%;
     padding-right: 20%;
+    overflow: auto;
 }
 
-#wrapper {
-    background-color: #FEFAEB;
-    margin-left: auto;
-    margin-right: auto;
-    min-width: 900px;
-    max-width: 1280px;
-    box-shadow: 5px 2px 5px 1px grey;
+.floatleft {
+    float: left;
+    padding-right: 2em;
+    padding-bottom: 2em;
+}
+
+.onethird {
+    float: left;
+    width: 33%;
 }
 
 #homehero {
-    width: 100%;
     height: 300px;
     background-image: url("images/hero.jpg");
-    background-size: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#heromugs {
+    height: 300px;
+    background-image: url("images/heromugs.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#heroguitar {
+    height: 300px;
+    background-image: url("images/heroguitar.jpg");
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 }
