@@ -1,0 +1,63 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+aside {
+    width: 20%;
+    padding-left: 5%;
+    /* margin-left: 15px; */
+    float: right;
+}
+
+main {
+    width: 80%;
+}
+
+header {
+    width: 100%;
+    margin-top: 0;
+    background-color: #030914;
+    color: white;
+    display: inline-flex;
+}
+
+h1 {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5em;
+}
+
+nav {
+   
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+#searchbar {
+    width: 250px;
+    background-image: url(images/icons8-search-120.png);
+    background-position: 220px 4px;
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    padding-left: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
