@@ -16,7 +16,7 @@ body {
 
 aside {
     width: 20%;
-    padding-left: 5%;
+    padding-left: 3%;
     margin-top: 45px;
     float: right;
     clear: right;
@@ -25,6 +25,10 @@ aside {
 main {
     width: 80%;
     margin-top: 10px;
+}
+
+a {
+    cursor: pointer;
 }
 
 img {
@@ -133,14 +137,13 @@ nav ul {
     line-height: 2em;
     margin-top: -6px;
     margin-left: 1.3em;
-    margin-right: 1em;
+    margin-right: 2em;
     padding: 0 5px;
-    color: #1DBBF8;
+    color: #2e2e2e;
 }
 
 #searchbar::-webkit-input-placeholder {
-    /* Chrome/Opera/Safari */
-    color: #1DBBF8;
+    color: #b9b9b9;
 }
 
 footer {
