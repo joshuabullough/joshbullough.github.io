@@ -6,33 +6,35 @@
 
 body {
     font-family: Tahoma, Arial, sans-serif;
-    background-color: #FCEBB6;
-    background-image: url("images/fadedroad50.jpg");
+    background-color: #D2B48C;
+    /* background-image: url("images/fadedroad50.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed; */
     color: #221811;
+    margin: 0;
 }
 
 #wrapper {
     background-color: #231814;
-    margin-left: auto;
+    /* margin-left: auto;
     margin-right: auto;
     width: 80%;
     min-width: 900px;
     max-width: 1280px;
-    box-shadow: 3px 3px 3px #676767;
+    box-shadow: 3px 3px 3px #676767; */
     padding: 0;
 }
 
 header {
     background-color: #D2B48C;
-    background-image: url("images/coffeelogo.jpg");
+    background-image: url("images/cup.jpg");
     background-repeat: no-repeat;
     color: #231814;
-    padding-left: 240px;
+    padding-left: 105px;
     padding-top: 5px;
     padding-bottom: 5px;
+    height: 128px;
 }
 
 header a {
@@ -52,15 +54,15 @@ header a:hover {
 }
 
 h1 {
-	font-size: 3em; 
-	font-family: 'Bayon', sans-serif;
+    font-size: 2em;
+    font-family: 'Bayon', sans-serif;
 }
 
 h2 {
     color: #8C3826;
 }
 
-h3 {
+h3, dt {
     color: #8C3826;
 }
 
@@ -75,13 +77,13 @@ h4 {
 }
 
 nav {
-    float: left;
+    /* float: left; */
     text-align: center;
-    font-weight: bold;
+    /* font-weight: bold; */
     font-size: 1.5em;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    width: 200px;
+    /* padding-top: 5px;
+    padding-bottom: 5px; */
+    /* width: 200px; */
 }
 
 nav a {
@@ -101,16 +103,29 @@ nav a:hover {
 }
 
 nav ul {
-    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
     list-style-type: none;
+    margin: 0;
+    font-size: 1.25em;
+}
+
+nav li {
+    width: 100%;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-right: 1em;
+    padding-left: 1em;
+    border-bottom: 1px solid black;
 }
 
 main {
     display: block;
     padding: 0 0 2em 0;
-    margin-left: 200px;
+    /* margin-left: 200px; */
     background-color: #FEF6C2;
-    overflow: auto;
+    /* overflow: auto; */
 }
 
 main h2,
@@ -120,8 +135,12 @@ p,
 div,
 ul,
 dl {
-    padding-left: 3em;
-    padding-right: 3em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+main ul {
+    padding-left: 2em;
 }
 
 dt {
@@ -135,23 +154,13 @@ img {
     height: auto;
 }
 
-footer {
-    font-family: Montaga, Arial, Helvetica, sans-serif;
-    background-color: #D2B48C;
-    font-size: .60em;
-    text-align: center;
-    font-style: italic;
-    padding: 1em;
-    border: 2px solid #8C3826;
-}
-
 .details {
     padding-left: 20%;
     padding-right: 20%;
     overflow: auto;
 }
 
-.floatleft {
+/* .floatleft {
     float: left;
     padding-right: 2em;
     padding-bottom: 2em;
@@ -160,25 +169,138 @@ footer {
 .onethird {
     float: left;
     width: 33%;
-}
+} */
 
 #homehero {
     height: 300px;
-    background-image: url("images/hero.jpg");
+    background-image: url("images/road.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
 #heromugs {
     height: 300px;
-    background-image: url("images/heromugs.jpg");
+    background-image: url("images/guitar.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
 #heroguitar {
     height: 300px;
-    background-image: url("images/heroguitar.jpg");
+    background-image: url("images/threemugs.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
+}
+
+#mobile {
+    display: inline;
+}
+
+#desktop {
+    display: none
+}
+
+footer {
+    font-family: Montaga, Arial, Helvetica, sans-serif;
+    background-color: #D2B48C;
+    font-size: .60em;
+    text-align: center;
+    font-style: italic;
+    padding-bottom: 1em;
+    border-top: 2px solid #8C3826;
+}
+
+
+@media (min-width: 600px) {
+    header {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    nav ul {
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    }
+
+    nav li {
+        border-bottom: none;
+    }
+
+    #homehero {
+        height: 50vh;
+        background-image: url("images/hero.jpg");
+    }
+
+    #heromugs {
+        background-image: url("images/heromugs.jpg");
+    }
+
+    #heroguitar {
+        background-image: url("images/heroguitar.jpg");
+    }
+
+    #flow {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #mobile {
+        display: none;
+    }
+
+    #desktop {
+        display: inline;
+    }
+
+    .details {
+        display: flex;
+        flex-direction: row;
+    }
+
+    h4 {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    @supports (display: grid) {
+        header {
+            grid-area: header;
+        }
+
+        nav {
+            grid-area: nav;
+        }
+
+        main {
+            grid-area: main;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+
+        #wrapper {
+            display: grid;
+            grid-template:
+                "header header"
+                "nav   main"
+                "footer   footer"
+                / 200px;
+        }
+
+        nav ul {
+            flex-direction: column;
+        }
+
+        header {
+            background-image: url("images/coffeelogo.jpg");
+        }
+    }
 }
