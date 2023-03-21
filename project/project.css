@@ -188,6 +188,7 @@ footer a:focus {}
 
     #topnav {
         float: none !important;
+        margin-top: -16px;
     }   
 
     #topnav a{
@@ -206,13 +207,18 @@ footer a:focus {}
     }
 
     #topBar{
-        padding-bottom: 270px;
+        padding-bottom: 252px;
+        background-color: transparent;
+        box-shadow: none;
     }
 
 }
 
 @media only screen and (max-width: 1000px){
 	/*Big smartphones [426px -> 600px]*/
+    #wrapper{
+        width: 90%;
+    }
 
     #topnav {
         margin-top: -17px;
@@ -232,14 +238,12 @@ footer a:focus {}
     } 
 
     #searchbar{
-        margin-top: 20px;
+        margin-top: 10px;
         margin-right: 0px;
     }
 
-    #topBar{
-        box-shadow: none;
-        background: #373329;
-        padding-bottom: 226.5px;
+    h2 {
+        margin-top: 40px;
     }
 
     #sidenav {
@@ -247,15 +251,16 @@ footer a:focus {}
     }
     
     aside{
-        margin-top: 20px;
+        margin-top: 40px;
     }
+    
 }
 
 @media only screen and (max-width: 700px){
 	/*Big smartphones [426px -> 600px]*/
 
 }
-@media only screen and (max-width: 425px){
+@media only screen and (max-width: 500px){
 	/*Small smartphones [325px -> 425px]*/
     header, #topnav a, #topnav ul {
         box-shadow: none;
@@ -272,6 +277,16 @@ footer a:focus {}
     #topnav a{
         font-size: 12pt;
     }
-
-
+    #searchbar{
+        width: 100%;
+    }
+    aside {
+        display: none;
+    }
+    main {
+        width: 100%;
+    }
+    h2 {
+        margin-top: 10px;
+    }
 }
