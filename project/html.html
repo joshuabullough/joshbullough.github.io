@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,9 @@
     <link href="css/project.css" rel="stylesheet">
     <link href="css/html.css" rel="stylesheet">
     <title>Coding with Josh</title>
+    <script src="js/html.js"></script>
 </head>
+
 <body>
     <!-- Home -->
     <div id="wrapper">
@@ -41,7 +44,8 @@
         </div>
         <aside>
 
-            <p>As a web developer, the three main languages we use to build websites are HTML, CSS, and JavaScript. Click the pages below to begin learning.</p>
+            <p>As a web developer, the three main languages we use to build websites are HTML, CSS, and JavaScript.
+                Click the pages below to begin learning.</p>
 
             <nav id="sidenav">
                 <ul>
@@ -66,23 +70,26 @@
 
             <h2>Let's Learn HTML!</h2>
 
-            <p>Welcome to my website! Here you will learn how to code webpages using HTML, CSS, and JavaScript at a very
-                basic level. Each of the pages offer coding challenges for people who want to begin learning how to
-                code.</p>
+            <p>The HTML &lt;p&gt; element defines a paragraph. A paragraph always starts on a new line, and browsers
+                automatically add some white space (a margin) before and after a paragraph 1.</p>
 
-            <p>HTML is the standard markup language for creating websites, CSS is the language that describes the
-                style of an HTML document, and JavaScript is the language that brings on the functionality of the
-                site. We will combine HTML, CSS, and JavaScript to create basic uses for building web pages.</p>
+            <p>An HTML paragraph element is a tag which is used to specify a paragraph to be displayed on the webpage. The text
+                between the starting &lt;p&gt; tag and the end &lt;p&gt; tag represents a paragraph in HTML.</p>
 
-            <p>I like to think of it as building a house. In this analogy, HTML is like the framework with all the walls, roof and siding. CSS is similiar to the design of
-                the house, its in charge of the color of the carpet, the type of drapes and where the furniture goes. JavaScript is like the electrical work and makes it so your house can have light when you flip 
-                on a switch. So if you like building things, then you are in the right place!</p>
-            
+            <p>There are plenty of other HTML elements and tags to learn. If you want to stretch yourself go do a search on the internet
+                to find more HTML elements and practice them below to see how they work.
+            </p>
+
             <h3>Challenge</h3>
             <p>Create a title and a paragraph using the h1 and p tags.</p>
+            <p><input class="hintBtn" type="button" value="Need a hint?" onclick="showHint()"></input></p>
+            <p class="hint">Create a title with surrounding h1 in less than and greater than signs like this: &lt;h1&gt;
+                Your Title Here
+                &lt;/h1&gt;
+            </p>
             <div id="codeArea">
                 <div id="input">
-
+                    <textarea id="userInput" class="inputTextArea" onchange="fillDisplay()"></textarea>
                 </div>
                 <div id="output">
 
@@ -103,4 +110,5 @@
     </div>
 
 </body>
+
 </html>
