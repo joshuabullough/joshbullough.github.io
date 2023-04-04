@@ -81,10 +81,10 @@ nav ul {
 }
 
 
+
 #topnav a:link {
     text-decoration: none;
 }
-
 
 #topnav a:visited {
     color: #140D03D0;
@@ -111,6 +111,15 @@ nav ul {
 
 #sidenav a {
     text-decoration: none;
+    color: #2e2e2e;
+}
+
+#sidenav a:hover {
+    text-decoration: none;
+    color: #2e2e2e;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition: .5s ease-in-out;
 }
 
 #sidenav ul {
@@ -136,7 +145,6 @@ nav ul {
     font-size: 1.3em;
     border-radius: 8px;
     line-height: 2em;
-    /* margin-top: -6px; */
     margin-left: 1.3em;
     margin-right: 1px;
     padding: 0 5px;
@@ -145,11 +153,11 @@ nav ul {
 
 #searchbtn {
     border: none;
-    /* margin-top: -6px; */
     margin-right: 20px;
     background-color: transparent;
     border: none;
     cursor: pointer;
+    font-size: 1.2em;
 }
 
 #searchbar::-webkit-input-placeholder {
