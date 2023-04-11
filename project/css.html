@@ -1,13 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="project.css" rel="stylesheet">
+    <link href="css/project.css" rel="stylesheet">
+    <link href="css/html.css" rel="stylesheet">
     <title>Coding with Josh</title>
+    <script src="js/css.js"></script>
 </head>
+
 <body>
-    <!-- CSS Page -->
+    <!-- CSS -->
+    <div id="wrapper">
+        <header>
+            <a href="index.html"><img src="images/Logo_Small.jpg" alt="logo" height="150"></a>
+            <h1>Coding with Josh</h1>
+        </header>
+        <div id="topBar">
+            <nav id="topnav">
+                <ul>
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="html.html">HTML</a>
+                    </li>
+                    <li>
+                        <a href="">CSS</a>
+                    </li>
+                    <li>
+                        <a href="javascript.html">JAVASCRIPT</a>
+                    </li>
+                    <li>
+                        <form id="search" action="">
+                            <input type="search" id="searchbar" placeholder="search">
+                            <input type="submit" id="searchbtn" value="Search">
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <aside>
+
+            <p>As a web developer, the three main languages we use to build websites are HTML, CSS, and JavaScript.
+                Click the pages below to begin learning.</p>
+
+            <nav id="sidenav">
+                <ul>
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="">HTML</a>
+                    </li>
+                    <li>
+                        <a href="css.html">CSS</a>
+                    </li>
+                    <li>
+                        <a href="javascript.html">JAVASCRIPT</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </aside>
+
+        <main>
+
+            <h2>Let's Learn CSS!</h2>
+
+            <p>CSS is a language used to style web pages that contain HTML elements. It can be used to change the color
+                of text, background color, font size, font style, borders, spacing, height, width, and much more.</p>
+
+            <p>CSS can be added to HTML documents in three different ways: <span class="bold-larger">inline</span>,
+                <span class="bold-larger">internal</span>, <span class="bold-larger">and external.</span> Inline CSS is
+                used to
+                apply a unique style to a single HTML element, internal CSS is used to define
+                a unique style for a single HTML page, and external CSS file is used to define the style for many HTML
+                pages. CSS saves a lot of time and work by controlling the layout of multiple web pages all at once.</p>
+
+            <p>From the ways mentioned above we can get at the HTML object's style on the page like you learned on the
+                HTML page. HTML objects
+                are given tags and in those tags are attributes that describe the object, some of these attributes that
+                describe the object be used
+                to select it and give it style. See the example below.</p>
+
+            <label>In this instance <span class="bold-larger">p</span> is used as our selector and stands for the
+                paragraph tag.</label>
+            <p class="italic-larger">p {<br>
+                <span class="indent">color: red;</span><br>
+                <span class="indent">text-align: center;</span><br>
+                }</p>
+
+            <h3>Challenge</h3>
+            <p>Create two css statements below. 1. Create a <span style="color:red">red font </span>for the title by
+                putting color:red within a css declaration statement. 2. Bold the paragraph using font-weight and then enlarge
+                the paragraph's font size to 18pt by using another css declaration statement.</p>
+            <p><input class="hintBtn" type="button" value="Need a hint?" onclick="showHint()"></input></p>
+            <p class="hint">The css selector for the title is h1 or its id "title"; the css selector for the paragraph is p.
+                <br>Here is an example of the title: #title { color: red; }
+            </p>
+            <div id="codeArea">
+                <div id="input">
+                    <textarea id="userInput" class="inputTextArea" onchange="fillDisplay()"></textarea>
+                </div>
+                <div id="output">
+                    <h1 id="title" class="output_style">This is the title</h1>
+                    <p class="output_style">I am a paragraph</p>
+                    <style id="style"></style>
+                </div>
+            </div>
+        </main>
+
+
+        <footer>
+            <!-- 4 Columns -->
+            <div class="onefourth">Contact Us</div>
+            <div class="onefourth">Sign up for news letters</div>
+            <div class="onefourth"><a target="_blank" href="https://www.youtube.com/@joshbullough">YouTube Channel</a>
+            </div>
+            <div class="onefourth">Etc.</div>
+        </footer>
+
+    </div>
+
 </body>
+
 </html>

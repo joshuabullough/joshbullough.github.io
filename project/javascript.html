@@ -1,13 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="project.css" rel="stylesheet">
+    <link href="css/project.css" rel="stylesheet">
+    <link href="css/html.css" rel="stylesheet">
     <title>Coding with Josh</title>
+    <script src="js/html.js"></script>
 </head>
+
 <body>
-    <!-- JavaScript Page -->
+    <!-- Javascript -->
+    <div id="wrapper">
+        <header>
+            <a href="index.html"><img src="images/Logo_Small.jpg" alt="logo" height="150"></a>
+            <h1>Coding with Josh</h1>
+        </header>
+        <div id="topBar">
+            <nav id="topnav">
+                <ul>
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="">HTML</a>
+                    </li>
+                    <li>
+                        <a href="css.html">CSS</a>
+                    </li>
+                    <li>
+                        <a href="javascript.html">JAVASCRIPT</a>
+                    </li>
+                    <li>
+                        <form id="search" action="">
+                            <input type="search" id="searchbar" placeholder="search">
+                            <input type="submit" id="searchbtn" value="Search">
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <aside>
+
+            <p>As a web developer, the three main languages we use to build websites are HTML, CSS, and JavaScript.
+                Click the pages below to begin learning.</p>
+
+            <nav id="sidenav">
+                <ul>
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="">HTML</a>
+                    </li>
+                    <li>
+                        <a href="css.html">CSS</a>
+                    </li>
+                    <li>
+                        <a href="javascript.html">JAVASCRIPT</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </aside>
+
+        <main>
+
+            <h2>Let's Learn JavaScript!</h2>
+
+            <p>CSS is a language used to style web pages that contain HTML elements. It can be used to change the color
+                of text, background color, font size, font style, borders, spacing, height, width, and much more.</p>
+
+            <p>CSS can be added to HTML documents in three different ways: inline CSS, internal CSS, and external CSS
+                file.Inline CSS is used to apply a unique style to a single HTML element, internal CSS is used to define
+                a unique style for a single HTML page, and external CSS file is used to define the style for many HTML
+                pages. CSS saves a lot of time and work by controlling the layout of multiple web pages all at once.</p>
+
+            <p>There are plenty of other HTML elements and tags to learn. If you want to stretch yourself go do a search
+                on the internet
+                to find more HTML elements and practice them below to see how they work.
+            </p>
+
+            <h3>Challenge</h3>
+            <p>Create a title and a paragraph using the h1 and p tags.</p>
+            <p><input class="hintBtn" type="button" value="Need a hint?" onclick="showHint()"></input></p>
+            <p class="hint">Create a title with surrounding h1 in less than and greater than signs like this: &lt;h1&gt;
+                Your Title Here
+                &lt;/h1&gt;
+            </p>
+            <div id="codeArea">
+                <div id="input">
+                    <textarea id="userInput" class="inputTextArea" onchange="fillDisplay()"></textarea>
+                </div>
+                <div id="output">
+
+                </div>
+            </div>
+        </main>
+
+
+        <footer>
+            <!-- 4 Columns -->
+            <div class="onefourth">Contact Us</div>
+            <div class="onefourth">Sign up for news letters</div>
+            <div class="onefourth"><a target="_blank" href="https://www.youtube.com/@joshbullough">YouTube Channel</a>
+            </div>
+            <div class="onefourth">Etc.</div>
+        </footer>
+
+    </div>
+
 </body>
+
 </html>

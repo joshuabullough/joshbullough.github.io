@@ -4,8 +4,7 @@ function showHint(){
         hintElem.style.display = 'none';
     } else {
         hintElem.style.display = 'block';
-    }
-    
+    }  
 }
 
 function fillDisplay(){
