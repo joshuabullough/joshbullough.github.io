@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Information -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="JavaJam Coffee Bar Case Study">
+    <meta name="author" content="Josh Bullough">
+    <meta name="keywords" content="Homework, USU, JavaJam, Assignment 1, Data Analytics and Information Systems">
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="javajam.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="js/common.js"></script>
+
+    <!-- Title -->
+    <title>JavaJam Coffee Bar Gear</title>
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <header>
+            <h1><a href="index.html">JavaJam Coffee Bar</a></h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="menu.html">Menu</a>
+                </li>
+                <li>
+                    <a href="music.html">Music</a>
+                </li>
+                <li>
+                    <a href="jobs.html">Jobs</a>
+                </li>
+                <li>
+                    <a href="gear.html">Gear</a>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <div id="herocouch">
+                <!-- <img src="images/mugs.jpg" alt="Mugs" align="right" width="400" height="299"> -->
+            </div>
+
+            <h2>JavaJam Gear</h2>
+            <p>JavaJam gear not only looks good, it’s good to your wallet, too.</p>
+            <p>Get a 10% discount when you wear a JavaJam shirt or bring in your JavaJam mug!</p>
+            <div id="flow">
+                <div class="item">
+                    <img src="images/javashirt.jpg">
+                    <h3>JavaJam Shirt</h3>
+                    <p>JavaJam shirts are comfortable to wear to school and around town. 100% cotton. XL only. $14.95
+                    </p>
+                    <form method="post" action="https://webdevbasics.net/cart.html">
+                        <input type="submit" value="Add to Cart">
+                    </form>
+                </div>
+                <div class="item">
+                    <img src="images/javamug.jpg">
+                    <h3>JavaJam Mug</h3>
+                    <p>JavaJam mugs carry a full load of caffeine (12 oz.) to jump-start your morning. $9.95</p>
+                    <form method="post" action="https://webdevbasics.net/cart.html">
+                        <input type="submit" value="Add to Cart">
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer>
+            Copyright © 2023 JavaJam Coffee Bar
+            <br>
+            <a href="mailto:josh@bullough.com">josh@bullough.com</a>
+            <p id="dateupdate"></p>
+            <script src="js/dateupdate.js"></script>
+        </footer>
+    </div>
+</body>
+
+</html>
