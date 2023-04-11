@@ -101,6 +101,7 @@ nav a:visited {
 
 nav a:hover {
     color: #CC9933;
+    transition: color 1s;
 }
 
 nav ul {
@@ -172,6 +173,18 @@ img {
     width: 33%;
 } */
 
+.active {
+    background-color: #2F3418;
+}
+
+.active a:visited{
+    color: white;
+}
+
+.active a:hover{
+    color: #CC9933;
+}
+
 .item {
     background-color: #FAF9F7;
     margin: 1em;
@@ -179,8 +192,9 @@ img {
     overflow: auto;
 }
 
-.item > img {
-    float: right;;
+.item>img {
+    float: right;
+    ;
 }
 
 #herocouch {
@@ -274,13 +288,49 @@ textarea {
         font-size: 3em;
     }
 
-    nav ul {
+    /* nav ul {
         flex-flow: row nowrap;
         justify-content: space-around;
     }
 
     nav li {
         border-bottom: none;
+    } */
+
+    nav ul {
+
+        /* display: flex;
+    
+        flex-direction: column; */
+
+        font-size: 1.25em;
+
+        list-style-type: none;
+
+        margin: 0;
+
+        padding: 0;
+
+    }
+
+    nav li {
+
+        border-bottom: 1px solid #FEF6C2;
+
+        /* padding: .5em 1em;
+    
+        width: 100%; */
+
+    }
+
+    nav li a {
+
+        display: flex;
+
+        flex-direction: column;
+
+        padding: .5em 1em;
+
     }
 
     #homehero {
@@ -320,21 +370,21 @@ textarea {
     }
 
     form {
-		width: 40%;
-		display: grid;
-		grid-gap: 1em;
-		gap: 1em;
-		grid-template-columns: 6em 1fr;
-	}
+        width: 40%;
+        display: grid;
+        grid-gap: 1em;
+        gap: 1em;
+        grid-template-columns: 6em 1fr;
+    }
 
-	input[type="submit"] {
-		grid-column: 2 / 3;
-		width: 9em;
-	}
+    input[type="submit"] {
+        grid-column: 2 / 3;
+        width: 9em;
+    }
 
     #herojobs {
-		background-image: url(images/herojobs.jpg)
-	}
+        background-image: url(images/herojobs.jpg)
+    }
 
 }
 
