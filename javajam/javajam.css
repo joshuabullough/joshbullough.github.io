@@ -172,6 +172,24 @@ img {
     width: 33%;
 } */
 
+.item {
+    background-color: #FAF9F7;
+    margin: 1em;
+    padding: 1em;
+    overflow: auto;
+}
+
+.item > img {
+    float: right;;
+}
+
+#herocouch {
+    height: 300px;
+    background-image: url("images/herocouch.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
 #homehero {
     height: 300px;
     background-image: url("images/road.jpg");
