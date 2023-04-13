@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/project.css" rel="stylesheet">
-    <link href="css/html.css" rel="stylesheet">
+    <link href="css/pages.css" rel="stylesheet">
 
     <!-- codemirror packages -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -120,30 +120,29 @@
             </p>
 
             <h3>Challenge</h3>
-            <p>Create variable called name and a variable called age and assign them values. Use the alert function to
+            <p>Create variable called name and a variable called age and assign them values. Then change the HTML
+                elements to show what your variables say in the document using
+                Javascript and DOM interface.
+                <br><br>Bonus Challenge: Use the alert function to
                 say this message:
                 <br><br>Hello {{Name}}, you are {{age}} years old. <br><text class="italic-smaller">Replace the
                     bracketed words with your variable's values.</text>
             </p>
             <p><input class="hintBtn" type="button" value="Need a hint?" onclick="showHint()"></input></p>
-            <p class="hint">Create a title with surrounding h1 in less than and greater than signs like this: &lt;h1&gt;
-                Your Title Here
-                &lt;/h1&gt;
+            <p class="hint"> You can select an element with its id by using the document.getElementById('ID Goes Here')
+                statement.
+                <br>The IDs for the elements are "name" and "age". Here is an example: document.getElementById('ID Goes
+                Here').innerHTML = {{Your Variable}};
             </p>
 
             <div id="codeArea">
                 <div id="input">
                     <textarea id="userInput" class="inputTextArea"></textarea>
                 </div>
-                <!-- <div id="output">
-                        <h1>Name</h1>
-                        <h1>Age</h1>
-                    </div>-->
-                    <!-- <div id="inputScripts"></div>  -->
-                <iframe style="width:100%" src="output.html">
-                    <!-- this allows for better security. -->
+                <iframe id="outputContent" src="output.html">
+                    <!-- This is where the code will be displayed. -->
                 </iframe>
-                
+
             </div>
         </main>
 

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/project.css" rel="stylesheet">
-    <link href="css/html.css" rel="stylesheet">
+    <link href="css/pages.css" rel="stylesheet">
     
     <!-- codemirror packages -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -119,11 +119,9 @@
                 <div id="input">
                     <textarea id="userInput" class="inputTextArea"></textarea>
                 </div>
-                <div id="output">
-                    <h1 id="title" class="output_style">This is the title</h1>
-                    <p class="output_style">I am a paragraph</p>
-                    <style id="style"></style>
-                </div>
+                <iframe id="outputContent" src="output.html">
+                    <!-- This is where the code will be displayed. -->
+                </iframe>
             </div>
         </main>
 

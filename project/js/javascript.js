@@ -1,4 +1,9 @@
 $(document).ready(function () {
+    setTimeout(() => {
+        document.getElementById('outputContent').contentWindow.document.getElementById('javascript').style.display = 'block';
+        document.getElementById('outputContent').contentWindow.document.getElementById('html').style.display = 'none';
+        document.getElementById('outputContent').contentWindow.document.getElementById('css').style.display = 'none';
+    }, 30);
     (function init() {
         const myTextArea = document.getElementById('userInput');
         editor = CodeMirror.fromTextArea(myTextArea, {
@@ -36,20 +41,20 @@ function showHint() {
     }
 }
 
-//currently this can access the whole document. security issue. I need to use Iframe
 function fillDisplay(input) {
+    //show javascript output
+    const iframe = document.getElementById('outputContent').contentWindow.document.getElementById('inputScripts');
     try {
-        document.getElementById('inputScripts').innerHTML;
         let s = document.createElement("script");
         s.type = "text/javascript";
-        //insert script as text and convert with eval into a usable javascript function.
-        s.append(`try { new Function(eval("\`{ ${input.replace(/\n/g,' ')} }\`"))(); } catch(e) {}`)
+        //insert script as text and convert with eval into a usable javascript function. Get replace string breaking characters.
+        s.append(`try { new Function(eval("\`{ ${input.replace(/\n/g,' ').replace(/'/g,'\\\'').replace(/"/g,'\\"').replace(/`/g,'\\"')} }\`"))(); } catch(e) {}`)
         //insert script element into div
-        document.getElementById('inputScripts').appendChild(s);
+        iframe.appendChild(s);
     } catch (e) {
         //not a good javascript statement
     } finally {
         //delete all scripts from the document.
-        document.getElementById('inputScripts').innerHTML = '';
+        iframe.innerHTML = "";
     }
 }
