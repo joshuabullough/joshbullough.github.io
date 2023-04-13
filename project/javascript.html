@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/project.css" rel="stylesheet">
     <link href="css/html.css" rel="stylesheet">
-   
+
     <!-- codemirror packages -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <link rel="stylesheet" href="codemirror/codemirror-5.65.12/lib/codemirror.css">
     <link rel="stylesheet" href="codemirror/codemirror-5.65.12/theme/dracula.css">
     <script src="codemirror/codemirror-5.65.12/lib/codemirror.js"></script>
-    <script src="codemirror/codemirror-5.65.12/mode/xml/xml.js"></script>
+    <script src="codemirror/codemirror-5.65.12/mode/javascript/javascript.js"></script>
     <script src="codemirror/codemirror-5.65.12/addon/edit/closetag.js"></script>
     <script src="codemirror/codemirror-5.65.12/addon/edit/closebrackets.js"></script>
     <script src="codemirror/codemirror-5.65.12/addon/selection/active-line.js"></script>
@@ -81,36 +81,69 @@
         </aside>
 
         <main>
-
             <h2>Let's Learn JavaScript!</h2>
 
-            <p>CSS is a language used to style web pages that contain HTML elements. It can be used to change the color
-                of text, background color, font size, font style, borders, spacing, height, width, and much more.</p>
+            <p>JavaScript is a programming language that can be used to create interactive web pages. It has built-in
+                data structures like Arrays, and Objects. It also comes with built in methods like the Date, and Math
+                functions. Additionally, it has a core set of language elements like operators, conditional loops, and
+                statements.</p>
 
-            <p>CSS can be added to HTML documents in three different ways: inline CSS, internal CSS, and external CSS
-                file.Inline CSS is used to apply a unique style to a single HTML element, internal CSS is used to define
-                a unique style for a single HTML page, and external CSS file is used to define the style for many HTML
-                pages. CSS saves a lot of time and work by controlling the layout of multiple web pages all at once.</p>
+            <p>Variables are what we use to store values. Variables are declared with var, let or const. Variables
+                declared with var can be reassigned (changed) and redeclared at anytime, let can be reassigned at
+                anytime, and const can never be reassigned or redeclared using the same name.<br>
+                <text class="italic">For example: var age = 10; let message = "hello"; const type =
+                    "human";</text><br><br>
 
-            <p>There are plenty of other HTML elements and tags to learn. If you want to stretch yourself go do a search
-                on the internet
-                to find more HTML elements and practice them below to see how they work.
+                Operators are mathematical symbols that produce a result
+                based on two values (or variables). For example you can write 1 + 1 in javascript and it will output 2.
+            </p>
+
+            <p>If statements, and loops rely on conditions. If statements are used to execute a block of code if a
+                specified condition is true. <br><text class="italic">ie. if this, then this; if not, then
+                    that.</text><br><br> Loops are used to
+                execute a block of code repeatedly until a specified condition is met.
+            </p>
+
+            <p> Here is an example of a script that would be used within the HTML document. Like CSS you can also link a
+                script
+                file by stating: <br><text class="italic">&lt;script src =
+                    "yourScriptSource.js">&lt;/script></text>
+                <div class="italic-larger">
+                    &lt;script><br>
+                    &emsp;function myFunction() {<br>
+                    &emsp;&emsp;alert("Hello World");<br>
+                    &emsp;&emsp;document.getElementById("demo").innerHTML = "Hello World";<br>
+                    &emsp;}<br>
+                    &lt;/script>
+                </div>
+                <br>
             </p>
 
             <h3>Challenge</h3>
-            <p>Create a title and a paragraph using the h1 and p tags.</p>
+            <p>Create variable called name and a variable called age and assign them values. Use the alert function to
+                say this message:
+                <br><br>Hello {{Name}}, you are {{age}} years old. <br><text class="italic-smaller">Replace the
+                    bracketed words with your variable's values.</text>
+            </p>
             <p><input class="hintBtn" type="button" value="Need a hint?" onclick="showHint()"></input></p>
             <p class="hint">Create a title with surrounding h1 in less than and greater than signs like this: &lt;h1&gt;
                 Your Title Here
                 &lt;/h1&gt;
             </p>
+
             <div id="codeArea">
                 <div id="input">
                     <textarea id="userInput" class="inputTextArea"></textarea>
                 </div>
-                <div id="output">
-
-                </div>
+                <!-- <div id="output">
+                        <h1>Name</h1>
+                        <h1>Age</h1>
+                    </div>-->
+                    <!-- <div id="inputScripts"></div>  -->
+                <iframe style="width:100%" src="output.html">
+                    <!-- this allows for better security. -->
+                </iframe>
+                
             </div>
         </main>
 

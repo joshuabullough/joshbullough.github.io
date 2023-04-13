@@ -29,6 +29,8 @@ main {
 
 p {
     font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    margin-top: 25px;
+    margin-bottom: 35px;
 }
 
 p,h2,h3,h4,label,a {
@@ -73,6 +75,17 @@ h1 {
 .italic-larger {
     font-style: italic;
     font-size: larger;
+}
+
+.italic-smaller {
+    font-style: italic;
+    font-size: smaller;
+    line-height: 40px;
+}
+
+.italic {
+    font-style: italic;
+    line-height: 40px;
 }
 
 .indent {
