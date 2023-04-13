@@ -27,6 +27,14 @@ main {
     margin-top: 10px;
 }
 
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}
+
+p,h2,h3,h4,label,a {
+    color: #2e2e2e;
+}
+
 p,a {
     font-size: 1.2em;
 }
@@ -70,8 +78,6 @@ h1 {
 .indent {
     margin-left: 25px;
 }
-
-
 
 #topBar {
     width: 100%;

@@ -7,8 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/project.css" rel="stylesheet">
     <link href="css/html.css" rel="stylesheet">
-    <title>Coding with Josh</title>
+
+    <!-- codemirror packages -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="codemirror/codemirror-5.65.12/lib/codemirror.css">
+    <link rel="stylesheet" href="codemirror/codemirror-5.65.12/theme/dracula.css">
+    <script src="codemirror/codemirror-5.65.12/lib/codemirror.js"></script>
+    <script src="codemirror/codemirror-5.65.12/mode/xml/xml.js"></script>
+    <script src="codemirror/codemirror-5.65.12/addon/edit/closetag.js"></script>
+    <script src="codemirror/codemirror-5.65.12/addon/edit/closebrackets.js"></script>
+    <script src="codemirror/codemirror-5.65.12/addon/selection/active-line.js"></script>
+    <script src="codemirror/codemirror-5.65.12/addon/comment/comment.js"></script>
+
+    <!-- must come after packages -->
     <script src="js/html.js"></script>
+
+    <title>Coding with Josh</title>
 </head>
 
 <body>
@@ -73,12 +87,28 @@
             <p>The HTML &lt;p&gt; element defines a paragraph. A paragraph always starts on a new line, and browsers
                 automatically add some white space (a margin) before and after a paragraph 1.</p>
 
-            <p>An HTML paragraph element is a tag which is used to specify a paragraph to be displayed on the webpage. The text
+            <p>An HTML paragraph element is a tag which is used to specify a paragraph to be displayed on the webpage.
+                The text
                 between the starting &lt;p&gt; tag and the end &lt;p&gt; tag represents a paragraph in HTML.</p>
 
-            <p>There are plenty of other HTML elements and tags to learn. If you want to stretch yourself go do a search on the internet
+            <p>There are plenty of other HTML elements and tags to learn. If you want to stretch yourself go do a search
+                on the internet
                 to find more HTML elements and practice them below to see how they work.
             </p>
+
+            <p>Below are some examples of HTML tags you can test out and see how they work.</p>
+            <div style="line-height: 35px;" class="italic-larger">
+                &lt;h1>This is your header&lt;/h1><br>
+                &lt;h2>This is your header&lt;/h2><br>
+                &lt;h3>This is your header&lt;/h3><br>
+                &lt;h4>This is your header&lt;/h4><br>
+                &lt;h5>This is your header&lt;/h5><br>
+                &lt;h6>This is your header&lt;/h6><br>
+                &lt;label>This is your header&lt;/label><br>
+                &lt;p>This is your paragraph.&lt;/p><br>
+                &lt;input><br>
+                &lt;img src="images/placeholder.svg" alt="placeholder"> The src can be linked to a folder or a url on the web.
+            </div>
 
             <h3>Challenge</h3>
             <p>Create a title and a paragraph using the h1 and p tags.</p>
@@ -89,7 +119,7 @@
             </p>
             <div id="codeArea">
                 <div id="input">
-                    <textarea id="userInput" class="inputTextArea" onchange="fillDisplay()"></textarea>
+                    <textarea id="userInput" class="inputTextArea"></textarea>
                 </div>
                 <div id="output">
 

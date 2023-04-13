@@ -37,3 +37,7 @@
 .hint {
     display: none;
 }
+
+.CodeMirror {
+    font-size: 16pt;
+  }
