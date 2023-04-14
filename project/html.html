@@ -48,7 +48,7 @@
                         <a href="javascript.html">JAVASCRIPT</a>
                     </li>
                     <li>
-                        <form id="search" action="">
+                        <form id="search">
                             <input type="search" id="searchbar" placeholder="search">
                             <input type="submit" id="searchbtn" value="Search">
                         </form>
@@ -112,7 +112,7 @@
 
             <h3>Challenge</h3>
             <p>Create a title and a paragraph using the h1 and p tags.</p>
-            <p><input class="hintBtn" type="button" value="Need a hint?" onclick="showHint()"></input></p>
+            <input class="hintBtn" type="button" value="Need a hint?" onclick="showHint()"><br><br>
             <p class="hint">Create a title with surrounding h1 in less than and greater than signs like this: &lt;h1&gt;
                 Your Title Here
                 &lt;/h1&gt;
@@ -121,12 +121,10 @@
                 <div id="input">
                     <textarea id="userInput" class="inputTextArea"></textarea>
                 </div>
-                <iframe id="outputContent" src="output.html" title="Code Output">
-                    <!-- This is where the code will be displayed. -->
-                </iframe>
+                <!-- This is where the code will be displayed. -->
+                <iframe id="outputContent" src="output.html" title="Code Output"></iframe>
             </div>
         </main>
-
 
         <footer>
             <!-- 4 Columns -->
