@@ -48,7 +48,7 @@
                         <a href="">JAVASCRIPT</a>
                     </li>
                     <li>
-                        <form id="search" action="">
+                        <form id="search">
                             <input type="search" id="searchbar" placeholder="search">
                             <input type="submit" id="searchbtn" value="Search">
                         </form>
@@ -91,33 +91,34 @@
             <p>Variables are what we use to store values. Variables are declared with var, let or const. Variables
                 declared with var can be reassigned (changed) and redeclared at anytime, let can be reassigned at
                 anytime, and const can never be reassigned or redeclared using the same name.<br>
-                <text class="italic">For example: var age = 10; let message = "hello"; const type =
-                    "human";</text><br><br>
+                <span class="italic">For example: var age = 10; let message = "hello"; const type =
+                    "human";</span><br><br>
 
                 Operators are mathematical symbols that produce a result
                 based on two values (or variables). For example you can write 1 + 1 in javascript and it will output 2.
             </p>
 
             <p>If statements, and loops rely on conditions. If statements are used to execute a block of code if a
-                specified condition is true. <br><text class="italic">ie. if this, then this; if not, then
-                    that.</text><br><br> Loops are used to
+                specified condition is true. <br><span class="italic">ie. if this, then this; if not, then
+                    that.</span><br><br> Loops are used to
                 execute a block of code repeatedly until a specified condition is met.
             </p>
 
             <p> Here is an example of a script that would be used within the HTML document. Like CSS you can also link a
                 script
-                file by stating: <br><text class="italic">&lt;script src =
-                    "yourScriptSource.js">&lt;/script></text>
-                <div class="italic-larger">
-                    &lt;script><br>
-                    &emsp;function myFunction() {<br>
-                    &emsp;&emsp;alert("Hello World");<br>
-                    &emsp;&emsp;document.getElementById("demo").innerHTML = "Hello World";<br>
-                    &emsp;}<br>
-                    &lt;/script>
-                </div>
-                <br>
+                file by stating: <br><span class="italic">&lt;script src =
+                    "yourScriptSource.js">&lt;/script></span>
             </p>
+            <div class="italic-larger">
+                &lt;script><br>
+                &emsp;function myFunction() {<br>
+                &emsp;&emsp;alert("Hello World");<br>
+                &emsp;&emsp;document.getElementById("demo").innerHTML = "Hello World";<br>
+                &emsp;}<br>
+                &lt;/script>
+            </div>
+            <br>
+
 
             <h3>Challenge</h3>
             <p>Create variable called name and a variable called age and assign them values. Then change the HTML
@@ -125,10 +126,10 @@
                 Javascript and DOM interface.
                 <br><br>Bonus Challenge: Use the alert function to
                 say this message:
-                <br><br>Hello {{Name}}, you are {{age}} years old. <br><text class="italic-smaller">Replace the
-                    bracketed words with your variable's values.</text>
+                <br><br>Hello {{Name}}, you are {{age}} years old. <br><span class="italic-smaller">Replace the
+                    bracketed words with your variable's values.</span>
             </p>
-            <p><input class="hintBtn" type="button" value="Need a hint?" onclick="showHint()"></input></p>
+            <input class="hintBtn" type="button" value="Need a hint?" onclick="showHint()"><br><br>
             <p class="hint"> You can select an element with its id by using the document.getElementById('ID Goes Here')
                 statement.
                 <br>The IDs for the elements are "name" and "age". Here is an example: document.getElementById('ID Goes
@@ -139,9 +140,8 @@
                 <div id="input">
                     <textarea id="userInput" class="inputTextArea"></textarea>
                 </div>
-                <iframe id="outputContent" src="output.html">
-                    <!-- This is where the code will be displayed. -->
-                </iframe>
+                <!-- This is where the code will be displayed. -->
+                <iframe id="outputContent" src="output.html" title="Code Output"></iframe>
 
             </div>
         </main>
