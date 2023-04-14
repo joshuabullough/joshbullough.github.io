@@ -48,7 +48,7 @@
                         <a href="javascript.html">JAVASCRIPT</a>
                     </li>
                     <li>
-                        <form id="search" action="">
+                        <form id="search">
                             <input type="search" id="searchbar" placeholder="search">
                             <input type="submit" id="searchbtn" value="Search">
                         </form>
@@ -111,7 +111,7 @@
             <p>Create two css statements below. 1. Create a <span style="color:red">red font </span>for the title by
                 putting color:red within a css declaration statement. 2. Bold the paragraph using font-weight and then enlarge
                 the paragraph's font size to 18pt by using another css declaration statement.</p>
-            <p><input class="hintBtn" type="button" value="Need a hint?" onclick="showHint()"></input></p>
+            <input class="hintBtn" type="button" value="Need a hint?" onclick="showHint()"><br><br>
             <p class="hint">The css selector for the title is h1 or its id "title"; the css selector for the paragraph is p.
                 <br>Here is an example of the title: #title { color: red; }
             </p>
@@ -119,9 +119,8 @@
                 <div id="input">
                     <textarea id="userInput" class="inputTextArea"></textarea>
                 </div>
-                <iframe id="outputContent" src="output.html" title="Code Output">
-                    <!-- This is where the code will be displayed. -->
-                </iframe>
+                <!-- This is where the code will be displayed. -->
+                <iframe id="outputContent" src="output.html" title="Code Output"></iframe>
             </div>
         </main>
 
