@@ -1,9 +1,19 @@
 $(document).ready(function () {
-    setTimeout(() => {
-        document.getElementById('outputContent').contentWindow.document.getElementById('javascript').style.display = 'block';
-        document.getElementById('outputContent').contentWindow.document.getElementById('html').style.display = 'none';
-        document.getElementById('outputContent').contentWindow.document.getElementById('css').style.display = 'none';
-    }, 30);
+    try {
+        setTimeout(() => {
+            document.getElementById('outputContent').contentWindow.document.getElementById('javascript').style.display = 'block';
+            document.getElementById('outputContent').contentWindow.document.getElementById('html').style.display = 'none';
+            document.getElementById('outputContent').contentWindow.document.getElementById('css').style.display = 'none';
+        }, 30);
+    } catch (e) {
+        //page not fully loaded yet.
+    } finally {
+        setTimeout(() => {
+            document.getElementById('outputContent').contentWindow.document.getElementById('javascript').style.display = 'block';
+            document.getElementById('outputContent').contentWindow.document.getElementById('html').style.display = 'none';
+            document.getElementById('outputContent').contentWindow.document.getElementById('css').style.display = 'none';
+        }, 70);
+    }
     (function init() {
         const myTextArea = document.getElementById('userInput');
         editor = CodeMirror.fromTextArea(myTextArea, {
