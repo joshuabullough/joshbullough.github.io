@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/project.css" rel="stylesheet">
     <link href="css/pages.css" rel="stylesheet">
+    <title>Coding with Josh</title>
     
     <!-- codemirror packages -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -22,7 +23,19 @@
     <!-- must come after the packages -->
     <script src="js/css.js"></script>
 
-    <title>Coding with Josh</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N7SKXQB53V"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-N7SKXQB53V');
+    </script>
+
 </head>
 
 <body>
@@ -109,10 +122,12 @@
 
             <h3>Challenge</h3>
             <p>Create two css statements below. 1. Create a <span style="color:red">red font </span>for the title by
-                putting color:red within a css declaration statement. 2. Bold the paragraph using font-weight and then enlarge
+                putting color:red within a css declaration statement. 2. Bold the paragraph using font-weight and then
+                enlarge
                 the paragraph's font size to 18pt by using another css declaration statement.</p>
             <input class="hintBtn" type="button" value="Need a hint?" onclick="showHint()"><br><br>
-            <p class="hint">The css selector for the title is h1 or its id "title"; the css selector for the paragraph is p.
+            <p class="hint">The css selector for the title is h1 or its id "title"; the css selector for the paragraph
+                is p.
                 <br>Here is an example of the title: #title { color: red; }
             </p>
             <div id="codeArea">
