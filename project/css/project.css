@@ -134,6 +134,11 @@ nav ul {
     transition: .8s;
 }
 
+#topnav a:active {
+    background-color: #140F03D9;
+    color: white;
+}
+
 #topnav ul {
     margin-top: 10px;
     list-style-type: none;
@@ -153,12 +158,24 @@ nav ul {
     color: #2e2e2e;
 }
 
+#sidenav a:link {
+    text-decoration: none;
+}
+
+#sidenav a:visited {
+    color: #140D03D0;
+}
+
 #sidenav a:hover {
     text-decoration: none;
     color: #2e2e2e;
     font-size: 1.4em;
     font-weight: 600;
     transition: .8s ease-out;
+}
+
+#sidenav a:active {
+    color: #2e2e2e;
 }
 
 #sidenav ul {
