@@ -43,15 +43,6 @@ $(document).ready(function () {
     }());
 });
 
-function showHint(){
-    const hintElem = document.getElementsByClassName('hint')[0];
-    if(hintElem.style.display == 'block'){
-        hintElem.style.display = 'none';
-    } else {
-        hintElem.style.display = 'block';
-    }  
-}
-
 function fillDisplay(input){
     document.getElementById('outputContent').contentWindow.document.getElementById('htmlOutput').innerHTML = input;
 }
