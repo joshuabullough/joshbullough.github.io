@@ -256,6 +256,11 @@ footer a:hover {
     font-size: 18px;
 }
 
+.activePage {
+    background-color: #030914 !important;
+    color: white !important;
+}
+
 @media only screen and (max-width: 1596px){
     /*Tablets [601px -> 1200px]*/
 
