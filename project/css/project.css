@@ -156,6 +156,9 @@ nav ul {
 #sidenav a {
     text-decoration: none;
     color: #2e2e2e;
+    font-weight: 400;
+    letter-spacing: .1rem;
+    font-weight: 600;
 }
 
 #sidenav a:link {

@@ -1,4 +1,9 @@
-#codeArea{
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+#codeArea {
     display: flex;
     border: 1px solid black;
     width: 100%;
@@ -6,7 +11,7 @@
     padding: 10px;
 }
 
-#input{
+#input {
     border: 1px solid black;
     width: 50%;
     height: 100%;
@@ -14,7 +19,7 @@
     overflow: auto;
 }
 
-#output{
+#output {
     width: 99%;
     margin-left: 5px;
     overflow: auto;
@@ -24,7 +29,7 @@
     margin-right: auto;
 }
 
-.inputTextArea{
+.inputTextArea {
     width: 100%;
     height: 100%;
     resize: none;
@@ -38,13 +43,114 @@
 
 .CodeMirror {
     font-size: 16pt;
+}
+
+#lessons {
+    position: relative;
+    width: auto;
+    height: 60px;
+    left: -70px;
+    top: 4px;
+}
+
+.lessons li {
+    position: relative;
+    text-indent: 30px;
+    height: 56px;
+    background-color: #767676;
+    display: inline-block;
+    margin-left: 30px;
+    padding: 10px 10px 10px 30px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 30px;
+}
+
+ul.lessons {
+    list-style: none;
+}
+
+li.lessonBtn:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 28px solid transparent;
+    border-bottom: 29px solid transparent;
+    margin: -10px 90px 0 10px;
+}
+
+li.lessonBtn:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 0;
+    border-top: 28px solid transparent;
+    border-left: 30px solid white;
+    border-bottom: 29px solid transparent;
+    margin: -10px 0px 0px 0px;
+}
+
+li.lessonBtn {
+    background-color: #23A946;
+}
+
+li.lessonBtn:after {
+    border-left: 30px solid #23A946;
+}
+
+li.lessonBtn:hover {
+    cursor: pointer;
+    background-color: #030914;
+    transition: all 0.4s ease-in-out;
+}
+
+li.lessonBtn:hover:after {
+    border-left: 30px solid #030914;
+    transition: all 0.4s ease-in-out;
+}
+
+.hintBtn {
+    cursor: pointer;
+    display: inline-block;
+    border: 2px solid #23A946;
+    border-radius: 5px;
+    padding: 12px 24px;
+    background-color: #23A946;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.4s ease-in-out;
   }
+  
+.hintBtn:hover {
+    background-color: #030914;
+    color: #fff;
+    border-color: #030914;
+}
+
+.line {
+    height: 20px;
+    border-bottom: solid 2px #000;
+    margin-top: 100px;
+    position: relative;
+    z-index: 1;
+}
 
 iframe {
     width: 50%;
     border: 1px solid black;
 }
 
-#javascript, #css, #html {
+#javascript,
+#css,
+#html {
     display: none;
 }
