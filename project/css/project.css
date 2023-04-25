@@ -117,6 +117,7 @@ nav ul {
     color: #140D03;
     padding-right: 75px;
     padding-left: 75px;
+    border-radius: 4px;
 }
 
 #topnav a:link {
