@@ -1,21 +1,7 @@
 let editor;
 
 $(document).ready(function () {
-    try {
-        setTimeout(() => {
-            document.getElementById('outputContent').contentWindow.document.getElementById('css').style.display = 'block';
-            document.getElementById('outputContent').contentWindow.document.getElementById('javascript').style.display = 'none';
-            document.getElementById('outputContent').contentWindow.document.getElementById('html').style.display = 'none';
-        }, 30);
-    } catch (e) {
-        //page not fully loaded yet.
-    } finally {
-        setTimeout(() => {
-            document.getElementById('outputContent').contentWindow.document.getElementById('css').style.display = 'block';
-            document.getElementById('outputContent').contentWindow.document.getElementById('javascript').style.display = 'none';
-            document.getElementById('outputContent').contentWindow.document.getElementById('html').style.display = 'none';
-        }, 70);
-    }
+    
     (function init() {
         const myTextArea = document.getElementById('userInput');
         editor = CodeMirror.fromTextArea(myTextArea, {
@@ -42,6 +28,14 @@ $(document).ready(function () {
             fillDisplay(code);
         });
     }());
+
+    $('#outputContent').on('load', function(){
+        //your code (will be called once iframe is done loading)
+        document.getElementById('outputContent').contentWindow.document.getElementById('css').style.display = 'block';
+        document.getElementById('outputContent').contentWindow.document.getElementById('javascript').style.display = 'none';
+        document.getElementById('outputContent').contentWindow.document.getElementById('html').style.display = 'none';
+    });
+
 });
 
 function fillDisplay(input) {
