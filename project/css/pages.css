@@ -144,10 +144,23 @@ li.lessonBtn:hover:after {
     z-index: 1;
 }
 
+.videos {
+    display: flex;
+    margin-top: 12px;
+}
+
+.videoCard {
+    padding: 6px;
+    background-color: #e2e2e2;
+    width: max-content;
+    margin-right: 10px;
+}
+
 iframe {
     width: 50%;
     border: 1px solid black;
 }
+
 
 #javascript,
 #css,
