@@ -128,7 +128,7 @@ li.lessonBtn:hover:after {
     text-transform: uppercase;
     letter-spacing: 2px;
     transition: all 0.4s ease-in-out;
-  }
+}
   
 .hintBtn:hover {
     background-color: #030914;
@@ -154,6 +154,12 @@ li.lessonBtn:hover:after {
     background-color: #e2e2e2;
     width: max-content;
     margin-right: 10px;
+}
+
+.challenges {
+    background-color: #e2e2e2;
+    padding: 8px;
+    border-radius: 3px;
 }
 
 iframe {
