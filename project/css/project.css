@@ -33,11 +33,17 @@ p {
     margin-bottom: 1.2em;
 }
 
-p,h2,h3,h4,label,a {
+p,
+h2,
+h3,
+h4,
+label,
+a {
     color: #2e2e2e;
 }
 
-p,a {
+p,
+a {
     font-size: 1.2em;
 }
 
@@ -192,7 +198,7 @@ nav ul {
     margin-right: 10px;
 }
 
-#search{
+#search {
     display: inline-flex;
 }
 
@@ -233,7 +239,6 @@ footer a:link {
     text-decoration: none;
 }
 
-
 footer a:visited {
     color: white;
 }
@@ -261,48 +266,48 @@ footer a:hover {
     color: white !important;
 }
 
-@media only screen and (max-width: 1596px){
-    /*Tablets [601px -> 1200px]*/
+@media only screen and (max-width: 1596px) {
 
+    /* /Tablets [601px -> 1200px]/ */
     #topnav {
         float: none !important;
         margin-top: -16px;
-    }   
+    }
 
-    #topnav a{
+    #topnav a {
         display: flex;
         flex-flow: row nowrap;
         width: 55%;
-        padding-top:12px;
-        padding-bottom:12px;
+        padding-top: 12px;
+        padding-bottom: 12px;
         margin-top: 5px;
         margin-bottom: 5px;
     }
 
-    #searchbar{
+    #searchbar {
         margin-top: -238px;
         margin-right: 15px;
     }
 
-    #topBar{
+    #topBar {
         padding-bottom: 252px;
         background-color: transparent;
         box-shadow: none;
     }
-
 }
 
-@media only screen and (max-width: 1000px){
-	/*Big smartphones [426px -> 600px]*/
-    #wrapper{
+@media only screen and (max-width: 1000px) {
+
+    /* /Big smartphones [426px -> 600px]/ */
+    #wrapper {
         width: 90%;
     }
 
     #topnav {
         margin-top: -17px;
-    }   
+    }
 
-    #topnav a{
+    #topnav a {
         display: flex;
         flex-flow: row nowrap;
         width: 100%;
@@ -311,11 +316,11 @@ footer a:hover {
         /* box-shadow: .5px 0px 5px 0px #373329; */
     }
 
-    #topnav ul{
+    #topnav ul {
         /* box-shadow: .3px 0px 5px 0px #373329; */
-    } 
+    }
 
-    #searchbar{
+    #searchbar {
         margin-top: 10px;
         margin-right: 0px;
     }
@@ -327,20 +332,21 @@ footer a:hover {
     #sidenav {
         display: none;
     }
-    
-    aside{
+
+    aside {
         margin-top: 40px;
     }
-    
 }
 
-@media only screen and (max-width: 700px){
-	/*Big smartphones [426px -> 600px]*/
-
+@media only screen and (max-width: 700px) {
+    /* /Big smartphones [426px ->600px]/ */
 }
-@media only screen and (max-width: 500px){
-	/*Small smartphones [325px -> 425px]*/
-    header, #topnav a, #topnav ul {
+
+@media only screen and (max-width: 500px) {
+
+    /* /Small smartphones [325px ->425px]/ header, */
+    #topnav a,
+    #topnav ul {
         box-shadow: none;
     }
 
@@ -352,18 +358,22 @@ footer a:hover {
         height: 100%;
     }
 
-    #topnav a{
+    #topnav a {
         font-size: 12pt;
     }
-    #searchbar{
+
+    #searchbar {
         width: 100%;
     }
+
     aside {
         display: none;
     }
+
     main {
         width: 100%;
     }
+
     h2 {
         margin-top: 10px;
     }
