@@ -139,8 +139,10 @@
                 <h3>Challenge</h3>
                 <p>Create a title and a paragraph using the h1 and p tags.</p>
 
-                <input class="hintBtn" type="button" value="Need a hint?" onclick="showHint()"><br><br>
-                <div class="hint">Create a title with surrounding h1 in less than and greater than signs like this:
+                <input class="hintBtn" type="button" value="Need a hint?" onclick="showHint()">
+                <div class="hint">
+                    <br>
+                    Create a title with surrounding h1 in less than and greater than signs like this:
                     &lt;h1&gt;
                     Your Title Here
                     &lt;/h1&gt;
@@ -155,6 +157,7 @@
 
             <div id="codeArea">
                 <div id="input">
+                    <label for="userInput" style="display: none;">Code Below</label>
                     <textarea id="userInput" class="inputTextArea"></textarea>
                 </div>
                 <!-- This is where the code will be displayed. -->

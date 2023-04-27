@@ -141,38 +141,44 @@
                 &lt;/script>
             </div>
             <br>
-
-            <h3>Challenge</h3>
-            <p>Create variable called name and a variable called age and assign them values. Then change the HTML
-                elements to show what your variables say in the document using
-                Javascript and DOM interface.
-                <br><br>Bonus Challenge: Use the alert function to
-                say this message:
-                <br><br>Hello {{Name}}, you are {{age}} years old. <br><span class="italic-smaller">Replace the
-                    bracketed words with your variable's values.</span>
-            </p>
-            <input class="hintBtn" type="button" value="Need a hint?" onclick="showHint()"><br><br>
+            <div class="challenges">
+                <h3>Challenge</h3>
+                <p>Create variable called name and a variable called age and assign them values. Then change the HTML
+                    elements to show what your variables say in the document using
+                    Javascript and DOM interface.
+                    <br><br>Bonus Challenge: Use the alert function to
+                    say this message:
+                    <br><br>Hello {{Name}}, you are {{age}} years old. <br><span class="italic-smaller">Replace the
+                        bracketed words with your variable's values.</span>
+                </p>
+                <input class="hintBtn" type="button" value="Need a hint?" onclick="showHint()">
+                <div class="hint">
+                    <br>
+                    You can select an element with its id by using the document.getElementById('ID Goes
+                    Here')
+                    statement.
+                    <br>The IDs for the elements are "name" and "age". Here is an example: document.getElementById('ID
+                    Goes
+                    Here').innerHTML = {{Your Variable}};
+                </div>
+                <p class="hint">
+                    P.S. Semi-colons are important for your code to work correctly in here.
+                </p>
+            </div>
             <div id="lessons">
                 <ul class="lessons">
                     <li class="lessonBtn">Lesson 1</li>
                 </ul>
             </div>
-            <p class="hint"> You can select an element with its id by using the document.getElementById('ID Goes Here')
-                statement.
-                <br>The IDs for the elements are "name" and "age". Here is an example: document.getElementById('ID Goes
-                Here').innerHTML = {{Your Variable}};
-            </p>
-            <p class="hint">
-                PS. Semi-colons are important for your code to work correctly in here.
-            </p>
             <div id="codeArea">
                 <div id="input">
+                    <label for="userInput" style="display: none;">Code Below</label>
                     <textarea id="userInput" class="inputTextArea"></textarea>
                 </div>
                 <!-- This is where the code will be displayed. -->
                 <iframe id="outputContent" src="output.html" title="Code Output"></iframe>
             </div>
-            
+
             <h3>Videos</h3>
             <div class="videos">
                 <div class="videoCard">
@@ -208,7 +214,7 @@
 
         <footer>
             <!-- 4 Columns -->
-            <div class="onefourth"><a href="mailto:codingwithjosh.learn@gmail.com" >Contact Us</a></div>
+            <div class="onefourth"><a href="mailto:codingwithjosh.learn@gmail.com">Contact Us</a></div>
             <div class="onefourth"><a href="">Sign up for news letters</a></div>
             <div class="onefourth"><a target="_blank" href="https://www.youtube.com/@joshbullough">YouTube Channel</a>
             </div>
