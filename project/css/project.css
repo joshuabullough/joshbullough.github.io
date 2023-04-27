@@ -270,7 +270,7 @@ footer a:hover {
     color: white !important;
 }
 
-@media only screen and (max-width: 1596px) {
+@media only screen and (max-width: 1700px) {
 
     /* /Tablets [601px -> 1200px]/ */
     #topnav {
@@ -320,7 +320,7 @@ footer a:hover {
 
     main {
         width: 100%; 
-        margin-top: 40px;
+        margin-top: 65px;
     }
 
     h1 {
@@ -394,17 +394,29 @@ footer a:hover {
         width: unset;
     }
 
+    .videos {
+        display: block !important;
+        width: 100% !important;
+        /* flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center; */
+        margin-bottom: 10px;
+    }
+
+    .videoCard {
+        width: 100% !important;
+    }
+
+    .videoiframe {
+        width: 100%;
+        height: 500px;
+    }
+
 }
 
 @media only screen and (max-width: 780px) {
     /* /Big smartphones [426px ->600px]/ */
-    .videos {
-        width: 100%;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    footer{
+    footer {
         background-size: 131%;
         height: 130px;
     } 
@@ -440,5 +452,14 @@ footer a:hover {
 
     h1 {
         font-size: 1.2em;
+    }
+
+    .videoiframe {
+        width: 100%;
+        height: 250px;
+    }
+
+    main {
+        margin-top: 25px;
     }
 }

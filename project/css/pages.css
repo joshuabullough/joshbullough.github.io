@@ -74,7 +74,7 @@ li.lessonBtn:after {
     height: 0;
     border-top: 28px solid transparent;
     border-bottom: 29px solid transparent;
-    margin: -10px 90px 0 10px;
+    margin: -10px 90px 0 9px;
 }
 
 li.lessonBtn:before {
