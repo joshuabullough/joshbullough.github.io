@@ -404,10 +404,6 @@ footer a:hover {
         flex-wrap: wrap;
         justify-content: center;
     }
-
-    video {
-        width: 100%;
-    }
     footer{
         background-size: 131%;
         height: 130px;

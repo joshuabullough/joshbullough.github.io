@@ -163,6 +163,11 @@ iframe {
     border: 1px solid black;
 }
 
+.videoiframe {
+    width: 100% !important;
+    border: none;
+}
+
 
 #javascript,
 #css,
