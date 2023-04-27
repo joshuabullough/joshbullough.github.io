@@ -215,6 +215,7 @@ nav ul {
     margin-right: 1px;
     padding: 0 5px;
     color: #2e2e2e;
+    border: 1px solid #2e2e2e;
 }
 
 #searchbtn {
@@ -362,7 +363,15 @@ footer a:hover {
     }
 
     #searchbtn {
+        margin-left: 5px;
+        margin-top: 10px;
         margin-right: 0px;
+        border: 1px solid #016e95;
+        border-radius: 5px;
+        background-color: #1caee3;
+        color: white;
+        font-size: 1rem;
+        font-weight: 600;
     }
 
     h2 {
@@ -376,10 +385,6 @@ footer a:hover {
     h1 {
         display: none;
     }
-/*     
-    header {
-        margin-bottom: 20px;
-    } */
 
     #cwjLogo {
         height: 75px;
