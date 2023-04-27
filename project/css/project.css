@@ -61,7 +61,6 @@ header {
     color: white;
     display: inline-flex;
     box-shadow: 2px 0px 5px 0px rgba(0, 0, 0, 0.3);
-    ;
 }
 
 h1 {
@@ -320,6 +319,10 @@ footer a:hover {
         margin-top: 40px;
     }
 
+    h1 {
+        font-size: 1.3em;
+    }
+
     .videos {
         width: 100%;
         flex-direction: row;
@@ -382,10 +385,6 @@ footer a:hover {
         display: none;
     }
 
-    h1 {
-        display: none;
-    }
-
     #cwjLogo {
         height: 75px;
         width: unset;
@@ -413,10 +412,6 @@ footer a:hover {
     #topnav a,
     #topnav ul {
         box-shadow: none;
-    }
-
-    h1 {
-        display: none;
     }
 
     header {
