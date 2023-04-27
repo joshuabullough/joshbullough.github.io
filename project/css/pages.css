@@ -95,11 +95,11 @@ li.lessonBtn:before {
 }
 
 li.lessonBtn {
-    background-color: #23A946;
+    background-color: #239240;
 }
 
 li.lessonBtn:after {
-    border-left: 30px solid #23A946;
+    border-left: 30px solid #239240;
 }
 
 li.lessonBtn:hover {
@@ -116,10 +116,10 @@ li.lessonBtn:hover:after {
 .hintBtn {
     cursor: pointer;
     display: inline-block;
-    border: 2px solid #23A946;
+    border: 2px solid #239240;
     border-radius: 4px;
     padding: 10px 24px;
-    background-color: #23A946;
+    background-color: #239240;
     color: #fff;
     font-size: 18px;
     font-weight: bold;
