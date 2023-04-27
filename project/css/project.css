@@ -262,7 +262,7 @@ footer a:hover {
 }
 
 .activePage {
-    background-color: #030914 !important;
+    background-color: #1caee3 !important;
     color: white !important;
 }
 
@@ -277,16 +277,15 @@ footer a:hover {
     #topnav a {
         display: flex;
         flex-flow: row nowrap;
-        width: 55%;
         padding-top: 12px;
         padding-bottom: 12px;
-        margin-top: 5px;
-        margin-bottom: 5px;
+        margin-top: 0px;
+        margin-bottom: 1px;
     }
 
-    #searchbar {
-        margin-top: -238px;
-        margin-right: 15px;
+    #search{ 
+        float: right;
+        margin-top: 10px;
     }
 
     #topBar {
@@ -294,6 +293,43 @@ footer a:hover {
         background-color: transparent;
         box-shadow: none;
     }
+
+    #codeArea {
+        display: flex;
+        flex-direction: column;
+        height: 800px !important;
+    }
+
+    #input {
+        width: 99% !important;
+        height: 50% !important;
+    }
+
+    #outputContent {
+        width: 99%;
+        height: 50%;
+    }
+
+    aside {
+        display: none;
+    }
+
+    main {
+        width: 100%; 
+    }
+
+    .videos {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        justify-items: center;
+    }
+
+    footer a {
+        font-size: .7rem;
+    }
+    
 }
 
 @media only screen and (max-width: 1000px) {
@@ -311,17 +347,20 @@ footer a:hover {
         display: flex;
         flex-flow: row nowrap;
         width: 100%;
-        margin-top: 1px;
-        margin-bottom: 1px;
-        /* box-shadow: .5px 0px 5px 0px #373329; */
     }
 
-    #topnav ul {
-        /* box-shadow: .3px 0px 5px 0px #373329; */
+    #search {
+        width: 100%;
     }
 
     #searchbar {
         margin-top: 10px;
+        margin-right: 0px;
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    #searchbtn {
         margin-right: 0px;
     }
 
@@ -333,13 +372,32 @@ footer a:hover {
         display: none;
     }
 
-    aside {
-        margin-top: 40px;
+    h1 {
+        display: none;
     }
+/*     
+    header {
+        margin-bottom: 20px;
+    } */
+
+    #cwjLogo {
+        height: 75px;
+    }
+
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 780px) {
     /* /Big smartphones [426px ->600px]/ */
+    .videos {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    video {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -364,10 +422,6 @@ footer a:hover {
 
     #searchbar {
         width: 100%;
-    }
-
-    aside {
-        display: none;
     }
 
     main {
