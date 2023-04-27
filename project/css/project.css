@@ -232,6 +232,10 @@ nav ul {
 
 footer {
     background-color: #030914;
+    background-image: url('../images/Logo_Mark.jpg');
+    background-repeat: no-repeat;
+    background-size: 110%;
+    height: 230px;
 }
 
 footer a:link {
@@ -244,12 +248,12 @@ footer a:visited {
 }
 
 footer a:hover {
-    background-color: #140F03D9;
+    /* background-color: #140F03D9; */
     color: white;
 }
 
 .onefourth {
-    background-color: #030914;
+    /* background-color: #030914;; */
     color: white;
     margin-top: 20px;
     padding-top: 25px;
@@ -404,6 +408,10 @@ footer a:hover {
     video {
         width: 100%;
     }
+    footer{
+        background-size: 131%;
+        height: 130px;
+    } 
 }
 
 @media only screen and (max-width: 500px) {
