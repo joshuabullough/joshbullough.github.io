@@ -235,7 +235,7 @@ footer {
     background-image: url('../images/Logo_Mark.jpg');
     background-repeat: no-repeat;
     background-size: 110%;
-    height: 230px;
+    height: 125px;
 }
 
 footer a:link {
@@ -270,7 +270,7 @@ footer a:hover {
     color: white !important;
 }
 
-@media only screen and (max-width: 1596px) {
+@media only screen and (max-width: 1200px) {
 
     /* /Tablets [601px -> 1200px]/ */
     #topnav {
@@ -418,7 +418,7 @@ footer a:hover {
     /* /Big smartphones [426px ->600px]/ */
     footer {
         background-size: 131%;
-        height: 130px;
+        /* height: 130px; */
     } 
 }
 
