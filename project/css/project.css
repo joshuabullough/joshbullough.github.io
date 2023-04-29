@@ -14,6 +14,12 @@ body {
     margin-right: auto;
 }
 
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
 aside {
     width: 20%;
     padding-left: 3%;
@@ -110,6 +116,7 @@ nav ul {
 
 #topnav {
     float: right;
+    margin-right: 15px;
 }
 
 #topnav a {
@@ -122,7 +129,7 @@ nav ul {
     color: #140D03;
     border-radius: 2px;
     margin-top: -3px;
-    margin-right: 5px;
+    margin-right: 3px;
 }
 
 #topnav a:link {
@@ -235,8 +242,8 @@ footer {
     background-image: url('../images/Logo_Mark.jpg');
     background-repeat: no-repeat;
     background-size: 110%;
-    height: 125px;
     margin-top: 15px;
+    height: 125px;
 }
 
 footer a:link {
@@ -273,10 +280,14 @@ footer a:hover {
 
 @media only screen and (max-width: 1200px) {
 
+    .sticky {
+        position: relative;
+    }
     /* /Tablets [601px -> 1200px]/ */
     #topnav {
         float: none !important;
         margin-top: -12px;
+        margin-right: 0px;
     }
 
     #topnav a {
@@ -295,10 +306,12 @@ footer a:hover {
     }
 
     #topBar {
-        padding-bottom: 252px;
+        padding-bottom: 220px;
         background-color: transparent;
         box-shadow: none;
     }
+
+
 
     #codeArea {
         display: flex;
@@ -322,7 +335,7 @@ footer a:hover {
 
     main {
         width: 100%; 
-        margin-top: 65px;
+        /* margin-top: 65px; */
     }
 
     h1 {
@@ -379,10 +392,6 @@ footer a:hover {
         font-weight: 600;
     }
 
-    h2 {
-        margin-top: 40px;
-    }
-
     #sidenav {
         display: none;
     }
@@ -415,6 +424,7 @@ footer a:hover {
         background-size: 131%;
         /* height: 130px; */
     } 
+
 }
 
 @media only screen and (max-width: 500px) {
@@ -441,10 +451,6 @@ footer a:hover {
         width: 100%;
     }
 
-    h2 {
-        margin-top: 10px;
-    }
-
     h1 {
         font-size: 1.2em;
     }
@@ -454,7 +460,8 @@ footer a:hover {
         height: 250px;
     }
 
-    main {
-        margin-top: 25px;
+    #topBar {
+        padding-bottom: 180px;
     }
+
 }
