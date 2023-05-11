@@ -41,9 +41,10 @@
 }
 
 #lessons {
+    display: flex;
     position: relative;
     width: auto;
-    height: 60px;
+    height: 76px;
     left: -70px;
     top: 4px;
 }
@@ -58,9 +59,9 @@
     padding: 10px 10px 10px 30px;
     color: white;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
-    line-height: 30px;
+    line-height: 35px;
 }
 
 ul.lessons {
@@ -87,6 +88,75 @@ li.lessonBtn:before {
     border-left: 30px solid white;
     border-bottom: 29px solid transparent;
     margin: -10px 0px 0px -2px;
+}
+
+
+#easy {
+    right: 40px;
+    background-color: #BF2129;
+}
+
+#easy:after {
+    border-top: 28px solid transparent;
+    border-left: 30px solid #BF2129;
+    border-bottom: 29px solid transparent;
+}
+
+#easy:hover {
+    cursor: pointer;
+    background-color: #030914;
+    transition: all 0.4s ease-in-out;
+}
+
+#easy:hover:after {
+    border-left: 30px solid #030914;
+    transition: all 0.4s ease-in-out;
+}
+
+#medium {
+    color: #030914;
+    right: 80px;
+    background-color: #EAD000;
+}
+
+#medium:after {
+    border-top: 28px solid transparent;
+    border-left: 30px solid #EAD000;
+    border-bottom: 29px solid transparent;
+}
+
+#medium:hover {
+    color: white;
+    cursor: pointer;
+    background-color: #030914;
+    transition: all 0.4s ease-in-out;
+}
+
+#medium:hover:after {
+    border-left: 30px solid #030914;
+    transition: all 0.4s ease-in-out;
+}
+
+#hard {
+    right: 120px;
+    background-color: #0054B4;
+}
+
+#hard:after {
+    border-top: 28px solid transparent;
+    border-left: 30px solid #0054B4;
+    border-bottom: 29px solid transparent;
+}
+
+#hard:hover {
+    cursor: pointer;
+    background-color: #030914;
+    transition: all 0.4s ease-in-out;
+}
+
+#hard:hover:after {
+    border-left: 30px solid #030914;
+    transition: all 0.4s ease-in-out;
 }
 
 li.lessonBtn {
@@ -124,7 +194,7 @@ li.lessonBtn:hover:after {
     letter-spacing: 2px;
     transition: all 0.4s ease-in-out;
 }
-  
+
 .hintBtn:hover {
     background-color: #030914;
     color: #fff;
