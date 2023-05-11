@@ -47,6 +47,7 @@
     height: 76px;
     left: -70px;
     top: 4px;
+    margin-bottom: 15px;
 }
 
 .lessons li {
@@ -227,6 +228,7 @@ li.lessonBtn:hover:after {
     background-color: #e2e2e2;
     padding: 8px;
     border-radius: 3px;
+    margin-bottom: 15px;
 }
 
 iframe {
