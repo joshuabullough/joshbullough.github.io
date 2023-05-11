@@ -283,6 +283,7 @@ footer a:hover {
     .sticky {
         position: relative;
     }
+
     /* /Tablets [601px -> 1200px]/ */
     #topnav {
         float: none !important;
@@ -300,7 +301,7 @@ footer a:hover {
         margin-right: 0px;
     }
 
-    #search{ 
+    #search {
         float: right;
         margin-top: 10px;
     }
@@ -334,7 +335,7 @@ footer a:hover {
     }
 
     main {
-        width: 100%; 
+        width: 100%;
         /* margin-top: 65px; */
     }
 
@@ -353,7 +354,7 @@ footer a:hover {
     footer a {
         font-size: .7rem;
     }
-    
+
 }
 
 @media only screen and (max-width: 1000px) {
@@ -419,11 +420,12 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 780px) {
+
     /* /Big smartphones [426px ->600px]/ */
     footer {
         background-size: 131%;
         /* height: 130px; */
-    } 
+    }
 
 }
 
@@ -460,8 +462,49 @@ footer a:hover {
         height: 250px;
     }
 
+    .challenges{
+        margin-top: 120px;
+        margin-bottom: 20px;
+    }
+
     #topBar {
         padding-bottom: 180px;
+    }
+
+    #lessons {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        left: unset !important;
+        width: max-content !important;
+    }
+
+    .lessonBtn {
+        font-size: 14px !important;
+    }
+
+    #lesson1 {
+        right: 70px !important;
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    #easy {
+        right: 100px !important;
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    #medium {
+        right: 70px !important;
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    #hard {
+        right: 100px !important;
+        grid-row: 2;
+        grid-column: 2;
     }
 
 }
